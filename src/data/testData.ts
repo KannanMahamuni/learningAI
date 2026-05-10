@@ -1,0 +1,16 @@
+export const testData = {
+  users: {
+    standard: {
+      username: 'standard_user',
+      password: 'secret_sauce'
+    },
+    lockedOut: {
+      username: 'locked_out_user',
+      password: 'secret_sauce'
+    }
+  },
+  api: {
+    userId: 1,
+    expectedEmailDomain: '@'
+  }
+} as const;
