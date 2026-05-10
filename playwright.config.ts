@@ -34,9 +34,5 @@ export default defineConfig({
   expect: {
     timeout: 5_000
   },
-  outputDir: 'test-results',
-  webServer: undefined,
-  metadata: {
-    apiBaseURL
-  }
+  outputDir: 'test-results'
 });
