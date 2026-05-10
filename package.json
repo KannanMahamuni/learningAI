@@ -1,0 +1,22 @@
+{
+  "name": "playwright-taf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A scalable Playwright TypeScript test automation framework for UI, API, and integration testing.",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "test:integration": "playwright test tests/integration",
+    "report:html": "playwright show-report",
+    "report:allure": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.0",
+    "@types/node": "^22.15.29",
+    "allure-commandline": "^2.32.0",
+    "allure-playwright": "^3.0.0",
+    "typescript": "^5.8.3"
+  }
+}
