@@ -12,7 +12,7 @@ test.describe('Integration: UI + API', () => {
     await loginPage.expectLoggedIn();
 
     const { data } = await api.fetchUser(testData.api.userId);
-    expect(data).toHaveProperty('id', testData.api.userId);
-    expect(data).toHaveProperty('email');
+    expect(data.id).toBe(testData.api.userId);
+    expect(data.email.length).toBeGreaterThan(0);
   });
 });
